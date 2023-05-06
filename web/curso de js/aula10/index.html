@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="obj">
+            click em min
+        </h1>
+    </div>
+    <script>
+        var a = window.document.querySelector('#obj')
+        a.addEventListener('click', mudaCor)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', sair)
+        
+        function mudaCor() {
+            if(a.style.color == 'black'){
+                a.style.color = 'blue'
+                alert('entrou')
+            } else{
+            //a.style.color = 'green'
+            a.innerText = 'clicou !'
+            a.style.background = 'red'
+            }
+        }
+
+        function entrou(){
+            a.innerHTML = 'emtramos <strong> FAMILIA <strong>'
+        }
+
+        function sair(){
+            a.innerText = 'saimos!!'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.titulo{
+    font-variant: normal;  /*define tudo maiusculo */
+    text-align: center; /*alinhamento */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="1.0">-->
+    <title>Document</title>
+</head>
+<body>
+    <h1> aopa glr</h1>
+
+    <style>
+        body{
+            color: blue;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        var nome;
+        var n1 = 12.244
+        nome = prompt("informe o seu nome: ")
+        document.write(`Bem vindo, ${nome}!<br/>`);
+        document.write(`seu nome em maiusculo é ${nome.toUpperCase()} <br/>`); // coloca tudo maisculo
+        document.write(`seu nome em minusculo é ${nome.toLocaleLowerCase( )} <br/>`); // coloca tudo minusculo
+        document.write(`seu nome possue ${nome.length} letras <br/>`); // quantidade de letras
+        
+        document.write(`valor da varivel n1: ${n1}<br/>`)
+        // o programa morre aqui
+        document.write(`dinheiro em real: ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} <br/>`) // formata valores finaceiros
+        document.write(`controlando as quantidade de casa apos as virgulas: ${n1.toFixed(2)}<br/>`)
+        document.write(`trocando o ponto pela virgula: ${n1.toFixed(2).replace('.', ',')}<br/>`)
+        
+    </script>
+    
+</body>
+</html>

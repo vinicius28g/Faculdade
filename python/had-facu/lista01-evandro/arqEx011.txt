@@ -1,0 +1,5 @@
+porta
+quarda-roupa
+janela
+espelho
+ventilador

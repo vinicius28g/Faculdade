@@ -1,0 +1,13 @@
+nick cliente: vitoria.txt
+|==========================================================|
+|                           pedido                         |
+|==========================================================|
+| ID |  DESCRICAO   |  QUANTIDADE  | VALOR UNIT  |  TOTAL  |
+| 0   X-TUDO 	  	 	 1 	  10,00 	 	10,00 	
+| 1   FANTA LATA 	  	 	 1 	  3,00 	 	3,00 	
+| TOTAL DA COMPRA : 13,00
+
+o CODIGO do pedido eh: 1
+
+Hora ...: 20:10:34		Data ...: 9/11/2022
+
