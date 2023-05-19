@@ -5,31 +5,67 @@
 }
 
 .game-board{
-    width: 80%; /*largura*/
-    height: 500px;/*autura*/
+    width: 98%; /*largura*/
+    height: 93vh;
     border: 1px solid rgb(0, 0, 0);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-   /* background-color: #4113b4;*/
-}
+   background: linear-gradient(#36a4db, #f0f0f076);
+   border-bottom: 30px solid #058c54;
+} 
 
 .tubo{
     position: absolute;
-    width: 100px;
-    height: 80px;
+    width: 10%;
+    height: 20%;
     bottom: 0;
-    animation: animacao-tubo 1300ms  infinite linear;
+    animation: animacao-tubo 1.5s  infinite linear;
 }
 
 .mario{
-    width: 120px;
+    width: 10%;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    
 }
 
 .jump{
-    animation: jump 800ms ease-out;
+    animation: jump 600ms ease-out;
+}
+
+.game-ouver{
+    width: 48%;
+    position: absolute;
+    margin-top:30% ;
+    z-index: 2;
+}
+
+
+.nuvem{
+    width: 67%;
+    height: 400px;
+    position: absolute;
+    animation: nuvem 30s infinite linear;
+    right: 0;
+    z-index: 1; /* ordema as empagem por pilha */
+}
+
+.reiniciar{
+    
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    background-color: #058c54;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+.contador{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-left: 80%;
+    color: black;
 }
 
 @keyframes animacao-tubo {
@@ -48,14 +84,25 @@
     }
 
     40%{
-        bottom: 130px;
+        bottom: 180px;
     }
 
     50%{
-        bottom: 130px;
+        bottom: 180px;
     }
 
     100%{
         bottom: 0px;
     }
+}
+
+@keyframes nuvem {
+    from{
+        right: -70%;
+    }
+
+    to{
+        right: 100%;
+    }
+    
 }
